@@ -12,6 +12,6 @@ function askcolor() {
     if(iscolor(color)){
         document.getElementById('background').style.backgroundColor = color;
     } else {
-    alert('I do not know that color')
+    alert('I do not know that color');
     }
 }

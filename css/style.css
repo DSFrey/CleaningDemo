@@ -1,14 +1,6 @@
 * {
     box-sizing: border-box;
 }
-main {
-    width: 960px;
-    margin: 0 auto;
-    background-color: #E7FF91;
-}
-main p {
-    font-size: medium;
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #A49ADB;
@@ -20,10 +12,6 @@ header {
     color: #E7FF91;
     text-align: center;
 }
-nav a {
-    text-decoration: none;
-    color: #E7FF91;
-}
 ul li{
     display: inline;
     font-size: 40px;
@@ -31,8 +19,20 @@ ul li{
     margin: 10px;
     vertical-align: middle;
 }
-main section ul li {
-    float: left;
+nav a {
+    text-decoration: none;
+    color: #E7FF91;
+}
+main {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #E7FF91;
+}
+main p {
+    font-size: medium;
+}
+main ul {
+    display: flex;
 }
 h1, h2 {
     padding-top: 30px;
