@@ -35,7 +35,7 @@ function guessingGame() {
         if (isNaN(guess)) {
             alert('That is not a number. Stop being difficult.')
         }
-    } while(isNaN(guess))
+    } while(target != guess)
     if(attempts == 1) {
         alert('Wow! You guessed it on your first try!')
     } else if(attempts < 5) {
