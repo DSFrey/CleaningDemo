@@ -9,10 +9,6 @@ main {
 main p {
     font-size: medium;
 }
-a {
-    border: 20px;
-    border-color: lime;
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #A49ADB;
@@ -35,17 +31,15 @@ ul li{
     margin: 10px;
     vertical-align: middle;
 }
-/* main section ul li {
+main section ul li {
     float: left;
-} */
+}
 h1, h2 {
     padding-top: 30px;
     text-align: center;
     color: #64108F;
 }
 footer {
-    position: sticky;
-    top: 0;
     background-color: #902902;
     color: #E7FF91;
     text-align: center;
