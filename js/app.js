@@ -59,7 +59,7 @@ function rate() {
             ratingOutput += i;
         }
         return document.getElementById('aboutMain').innerHTML = ratingOutput;
-    } else if (rating = 11) {
+    } else if (rating == 11) {
         for(let i = 1; i <= 10; i++) {
             ratingOutput += '<img src="images/CleaningBucket.png" />';
             ratingOutput += i;
