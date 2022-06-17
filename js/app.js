@@ -46,15 +46,31 @@ function guessingGame() {
 }
 
 function rate() {
-    console.log('It is running')
+    console.log('It is running');
     let rating = parseInt(prompt('On a scale of 1 to 10, how clean are we?'));
     let ratingOutput = '';
     while (isNaN(rating)) {
         rating = parseInt(prompt('That is not a number.\nOn a scale of 1 to 10, how clean are we?'));
     }
-    for(let i = 0; i < rating; i++) {
+    if (rating > 11) {
+        alert('Thanks for the enthusiasm, but it is a scale of 1 to 10')
+        for(let i = 1; i <= 10; i++) {
+            ratingOutput += '<img src="images/CleaningBucket.png" />';
+            ratingOutput += i;
+        }
+        return document.getElementById('aboutMain').innerHTML = ratingOutput;
+    } else if (rating = 11) {
+        for(let i = 1; i <= 10; i++) {
+            ratingOutput += '<img src="images/CleaningBucket.png" />';
+            ratingOutput += i;
+        }
+        ratingOutput += '<img src="images/spinalTap.gif" />';
+        ratingOutput += 11;
+        return document.getElementById('aboutMain').innerHTML = ratingOutput;
+    }
+    for(let i = 1; i <= rating; i++) {
         ratingOutput += '<img src="images/CleaningBucket.png" />';
         ratingOutput += i;
     }
-    return document.write(ratingOutput);
+    return document.getElementById('aboutMain').innerHTML = ratingOutput;
 }
